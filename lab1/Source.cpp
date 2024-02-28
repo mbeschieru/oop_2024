@@ -1,5 +1,5 @@
-#include <iostream>
 #include "header.h"
+#include <iostream>
 
 int Sum(int a, int b) { return a + b; }
 
@@ -39,12 +39,11 @@ int main(int argc, char *argv[]) {
                 x.p1 = 8;
                 x.p2 = 4;
                 break;
-
         }
         S += Operatori[idx](x.p1, x.p2);
     }
 
-    //S=337
+    // S=337
     printf("S = %d\n", S);
 
     return 0;
