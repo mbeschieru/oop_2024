@@ -1,2 +1,8 @@
 # Ignore cmake-build-debug folders in all directories
 **/cmake-build-debug/
+
+# Ignore .idea directories
+**/.idea/
+
+# Ignore .DS_Store files
+**/.DS_Store
