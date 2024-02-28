@@ -1,6 +1,17 @@
-# Ignore cmake-build-debug folders
-**/cmake-build-debug/
+# Ignore JetBrains IDE specific directory
+.idea/
 
-# Ignore .DS_Store files
-**/.DS_Store
+# Ignore macOS Finder DS_Store files
+.DS_Store
 
+# Ignore CMake cache files
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+CMakeTmp/
+
+# Ignore build directories
+cmake-build-*/
+
+# Ignore user-specific CMakeLists.txt file
+CMakeLists.txt.user
