@@ -1,17 +1,47 @@
-# Ignore JetBrains IDE specific directory
-.idea/
-
-# Ignore macOS Finder DS_Store files
+# General files to ignore
 .DS_Store
+*.cache
 
-# Ignore CMake cache files
-CMakeCache.txt
-CMakeFiles/
-CMakeScripts/
-CMakeTmp/
+# JetBrains IDEs - IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, etc.
+.idea/
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+.idea/**/aws.xml
+.idea/**/contentModel.xml
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/dbnavigator.xml
+.idea/**/gradle.xml
+.idea/**/libraries
+# Uncomment if using auto-import for Gradle or Maven
+# .idea/artifacts
+# .idea/compiler.xml
+# .idea/jarRepositories.xml
+# .idea/modules.xml
+# .idea/*.iml
+# .idea/modules
+# *.iml
+# *.ipr
+.idea/**/mongoSettings.xml
+*.iws
+out/
+.idea_modules/
+atlassian-ide-plugin.xml
+.idea/replstate.xml
+.idea/sonarlint/
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+.idea/httpRequests
+.idea/caches/build_file_checksums.ser
 
-# Ignore build directories
+# CMake build directory
 cmake-build-*/
-
-# Ignore user-specific CMakeLists.txt file
-CMakeLists.txt.user
