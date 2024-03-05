@@ -64,6 +64,7 @@ passed years: %d
             movie_compare_score(ep4, ep5),
             movie_compare_length(ep4, ep5),
             movie_compare_passed_years(ep4, ep5));
+    std::cout<<'\n';
 
     MovieSeries series;
     series.init();
