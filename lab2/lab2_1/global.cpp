@@ -5,13 +5,13 @@
 #include "global.h"
 
 int movie_compare_name(Movie &m1, Movie &m2) {
-    size_t size_1, size_2;
-    size_1 = strlen(m1.getName());
-    size_2 = strlen(m2.getName());
-
-    if (size_1 == size_2)
+    char *name_1 , *name_2;
+    name_1 = m1.getName();
+    name_2 = m2.getName();
+    int result = std::strcmp(name_1,name_2);
+    if (result == 0 )
         return 0;
-    if (size_1 < size_2)
+    if (result < 0 )
         return -1;
     return 1;
 }
