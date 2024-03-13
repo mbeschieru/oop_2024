@@ -7,12 +7,12 @@
 #include "Canvas.h"
 
 Canvas::Canvas(int lines, int columns) : lines(lines), columns(columns) {
-    clear();
     matrix = new char *[lines];
-    for (int i = 0; i < columns; i++) {
+    for (int i = 0; i < lines; i++) {
         matrix[i] = new char[columns];
         std::memset(matrix[i], ' ', columns);
     }
+    clear();
 }
 
 Canvas::~Canvas() {
