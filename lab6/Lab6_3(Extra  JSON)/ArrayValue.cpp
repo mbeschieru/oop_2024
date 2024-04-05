@@ -33,9 +33,6 @@ void ArrayValue::print(std::ostream &out) const {
     out << ']';
 }
 
-/*
-ArrayValue::operator unsigned *() {
-    auto unsignedCount = static_cast<unsigned int >(count);
-    return &unsignedCount;
+ArrayValue::operator unsigned() const {
+    return count;
 }
-*/

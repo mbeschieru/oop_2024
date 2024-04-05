@@ -45,8 +45,6 @@ void ObjectValue::print(std::ostream &out) const {
     out << '}';
 }
 
-
-ObjectValue::operator unsigned int *() const {
-    auto unsignedCount = static_cast<unsigned int >(count);
-    return &unsignedCount;
+ObjectValue::operator unsigned() const {
+    return count;
 }

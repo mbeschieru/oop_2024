@@ -32,7 +32,7 @@ int main() {
     object->add("array_strings", array_strings);
     object->add("info", subobject);
 
-//   
+    std::cout << "Top node has " << (unsigned) *object << " subnodes\n";
     object->print(std::cout);
     return 0;
 }

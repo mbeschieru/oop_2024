@@ -22,6 +22,7 @@ public:
 
     void print(std::ostream &out) const override;
 
+    operator unsigned () const;
 };
 
 

@@ -30,7 +30,7 @@ public:
 
     void print(std::ostream &out) const override;
 
-    explicit operator unsigned int *() const;
+   operator unsigned () const;
 };
 
 
